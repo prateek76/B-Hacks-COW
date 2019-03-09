@@ -23,7 +23,7 @@
     <label for="enroll"><b>Enrollment Number</b></label>
     <input type="text" placeholder="Enter Enrollment Number" name="enroll" required>
      <br>
-    <label for="Email"><b>Username</b></label>
+    <label for="Email"><b>Email</b></label>
     <input type="email" placeholder="Enter Username" name="Email" required>
      <br>
      <label for="Email"><b>HOSTEL</b></label>

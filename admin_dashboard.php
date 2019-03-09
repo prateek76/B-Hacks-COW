@@ -242,7 +242,7 @@ if(!isset($_SESSION['loggedin'])){
 					<th style="padding: 10px">IFSC CODE</th>
 					<th style="padding: 10px">BANK NAME</th>
 					<th style="padding: 10px">BANK HOLDER NAME</th>
-					<th style="padding: 10px">BANK BRANCH NAME</th>
+					<th style="padding: 10px">ACCOUNT NUMBER</th>
 					<th style="padding: 10px">HOSTEL</th>
 					<th style="padding: 10px">Email</th>
 					<th style="padding: 10px">Uploads</th>
@@ -336,7 +336,7 @@ if(!isset($_SESSION['loggedin'])){
 						</div>
 
 						<div class="form-group">
-						<label class="control-label col-sm-2" for="email">BANK_BRANCH_NAME</label>
+						<label class="control-label col-sm-2" for="email">ACCOUNT_NUMBER</label>
 						<div class="col-sm-4">
 							<textarea type="email" class="form-control" id="ans_addr" disabled></textarea>
 						</div>

@@ -53,7 +53,7 @@ require 'db.php' ;
                 $sql->bindValue(':uploadedImageName', $uploadedImageName);
                 $cmd = $sql->execute();
 
-                if($cmd){
+                if($cmd) {
 					$_SESSION['success'] ="Files Added";
                    
 					header("location: ../student_dashboard.php"); 

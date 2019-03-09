@@ -206,8 +206,8 @@ echo $_SESSION['success'];
                 <div class="col-md-6">
 
                     <div class="form-group">
-                        <label>BANK_BRANCH_NAME</label>
-                        <input type="text" class="form-control" name="BANK_BRANCH_NAME" placeholder="BANK_BRANCH_NAME">
+                        <label>ACCOUNT_NUMBER</label>
+                        <input type="text" class="form-control" name="BANK_BRANCH_NAME" placeholder="ACCOUNT NUMBER">
                     </div>
                 </div>
                 <!--  col-md-6   -->

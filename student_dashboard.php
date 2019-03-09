@@ -205,6 +205,11 @@
 		.tr-none{
 			display:none;
 		}
+
+		#previewimg {
+			height: 25px;
+			width: 25px;
+		}
 	</style>
 </head>
 <body>
@@ -239,7 +244,7 @@
 					<th style="padding: 10px">IFSC CODE</th>
 					<th style="padding: 10px">BANK NAME</th>
 					<th style="padding: 10px">BANK HOLDER NAME</th>
-					<th style="padding: 10px">BANK BRANCH NAME</th>
+					<th style="padding: 10px">ACCOUNT NUMBER</th>
 					<th style="padding: 10px">HOSTEL</th>
 					<th style="padding: 10px">Email</th>
 					<th style="padding: 10px">Uploads</th>
@@ -328,7 +333,7 @@
 
 
 						<div class="form-group">
-						<label class="control-label col-sm-2" for="email">BANK_BRANCH_NAME</label>
+						<label class="control-label col-sm-2" for="email">ACCOUNT NUMBER</label>
 						<div class="col-sm-4">
 							<textarea type="email" class="form-control" id="ans_addr" disabled></textarea>
 						</div>
@@ -407,7 +412,7 @@
 			//var stemai = document.getElementById("stemai"+id).textContent;
 			var ststrtdat = document.getElementById("ststrtdat"+id).textContent;
 			var stenddat = document.getElementById("stenddat"+id).textContent;
-			console.log("error");
+			//console.log("error");
 			//document.getElementById("ans_name").textContent = stname;
 			//document.getElementById("ans_enroll").textContent = stroll;
 			document.getElementById("ans_branch").textContent = stbrnch;
@@ -510,14 +515,15 @@ $('#add_more').click(function() {
 	$('#files').append(div_files).fadeIn('slow');
 });
 
-
+var abc = 0;
 $('body').on('change', '#file', function(){
+		
 		if (this.files && this.files[0]) {
 			abc += 1; 
 			
 			var z = abc - 1;
 			var x = $(this).parent().find('#previewimg' + z).remove();
-			$(this).before("<div id='abcd"+ abc +"' class='abcd'><img id='previewimg" + abc + "' src=''/></div>");
+			$(this).before("<div id='abcd"+ abc +"' class='abcd'><img style='width:32px;height:32px' id='previewimg" + abc + "' src=''/></div>");
 		
 			var reader = new FileReader();
 			reader.onload = imageIsLoaded;
